@@ -10,6 +10,7 @@ import {
   Dimensions,
   NativeModules,
 } from 'react-native';
+import SwiftView from './SwiftView';
 
 const SwiftLibrary = NativeModules.SwiftLibrary;
 
@@ -44,28 +45,36 @@ const App = () => {
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
           <View style={styles.body}>
-            <Text style={styles.headText}>Call a Swift Function</Text>
-            <View style={styles.btnParentSection}>
-              <TouchableOpacity
-                onPress={() => alertMessage('Message from js')}
-                style={styles.btnSection}>
-                <Text style={styles.btnText}>Alert Message</Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                onPress={() => cbMessage('Message from js')}
-                style={styles.btnSection}>
-                <Text style={styles.btnText}>Callback Message</Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                onPress={() => alertNameAge('Peter', '15')}
-                style={styles.btnSection}>
-                <Text style={styles.btnText}>Alert Peter 15</Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                onPress={() => cbNameAge('Peter', '15')}
-                style={styles.btnSection}>
-                <Text style={styles.btnText}>Callback Peter 15</Text>
-              </TouchableOpacity>
+            <View>
+              <Text style={styles.headText}>Call a Swift Function</Text>
+              <View style={styles.btnParentSection}>
+                <TouchableOpacity
+                  onPress={() => alertMessage('Message from js')}
+                  style={styles.btnSection}>
+                  <Text style={styles.btnText}>Alert Message</Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  onPress={() => cbMessage('Message from js')}
+                  style={styles.btnSection}>
+                  <Text style={styles.btnText}>Callback Message</Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  onPress={() => alertNameAge('Peter', '15')}
+                  style={styles.btnSection}>
+                  <Text style={styles.btnText}>Alert Peter 15</Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  onPress={() => cbNameAge('Peter', '15')}
+                  style={styles.btnSection}>
+                  <Text style={styles.btnText}>Callback Peter 15</Text>
+                </TouchableOpacity>
+              </View>
+              <View style={styles.swiftContainer}>
+                <Text style={styles.headText}>
+                  This is a view defined in Swift:
+                </Text>
+                <SwiftView />
+              </View>
             </View>
           </View>
         </ScrollView>
@@ -100,6 +109,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   headText: {textAlign: 'center', fontSize: 20, paddingBottom: 10},
+  swiftContainer: {
+    marginTop: 20,
+  },
 });
 
 export default App;

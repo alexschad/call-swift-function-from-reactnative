@@ -20,6 +20,9 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8894C8EA25F915D40080DD6D /* SwiftLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8894C8E925F915D40080DD6D /* SwiftLibrary.swift */; };
 		8894C8F025F916870080DD6D /* SwiftLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8894C8EF25F916870080DD6D /* SwiftLibrary.m */; };
+		88B6838626C6BECF00FEE4FE /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6838526C6BECF00FEE4FE /* SampleView.swift */; };
+		88B6838C26C6BFCB00FEE4FE /* SampleViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6838B26C6BFCB00FEE4FE /* SampleViewManager.swift */; };
+		88B6839326C6C34B00FEE4FE /* SampleViewModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B6839226C6C34B00FEE4FE /* SampleViewModule.m */; };
 		9C84F0AD581BA57C81C2DB79 /* libPods-SwiftFunctionFromReactNative-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EBD9825677F7FF819C24F47 /* libPods-SwiftFunctionFromReactNative-tvOSTests.a */; };
 		AB186A05D50D915C43ED0F38 /* libPods-SwiftFunctionFromReactNative-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB768AAB83B0075EE36EDAE5 /* libPods-SwiftFunctionFromReactNative-tvOS.a */; };
 /* End PBXBuildFile section */
@@ -65,6 +68,9 @@
 		8894C8E825F915D40080DD6D /* SwiftFunctionFromReactNative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftFunctionFromReactNative-Bridging-Header.h"; sourceTree = "<group>"; };
 		8894C8E925F915D40080DD6D /* SwiftLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLibrary.swift; sourceTree = "<group>"; };
 		8894C8EF25F916870080DD6D /* SwiftLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftLibrary.m; sourceTree = "<group>"; };
+		88B6838526C6BECF00FEE4FE /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
+		88B6838B26C6BFCB00FEE4FE /* SampleViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewManager.swift; sourceTree = "<group>"; };
+		88B6839226C6C34B00FEE4FE /* SampleViewModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleViewModule.m; sourceTree = "<group>"; };
 		92B31FC301380998D9B6FDBA /* Pods-SwiftFunctionFromReactNative-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFunctionFromReactNative-tvOS.release.xcconfig"; path = "Target Support Files/Pods-SwiftFunctionFromReactNative-tvOS/Pods-SwiftFunctionFromReactNative-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		B4C762F41733E8612970B5ED /* libPods-SwiftFunctionFromReactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftFunctionFromReactNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C913EE66906C55ABCB40EC5F /* Pods-SwiftFunctionFromReactNative-SwiftFunctionFromReactNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFunctionFromReactNative-SwiftFunctionFromReactNativeTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftFunctionFromReactNative-SwiftFunctionFromReactNativeTests/Pods-SwiftFunctionFromReactNative-SwiftFunctionFromReactNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +185,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				88B6839226C6C34B00FEE4FE /* SampleViewModule.m */,
+				88B6838B26C6BFCB00FEE4FE /* SampleViewManager.swift */,
+				88B6838526C6BECF00FEE4FE /* SampleView.swift */,
 				8894C8EF25F916870080DD6D /* SwiftLibrary.m */,
 				8894C8E925F915D40080DD6D /* SwiftLibrary.swift */,
 				13B07FAE1A68108700A75B9A /* SwiftFunctionFromReactNative */,
@@ -575,10 +584,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88B6838626C6BECF00FEE4FE /* SampleView.swift in Sources */,
 				8894C8EA25F915D40080DD6D /* SwiftLibrary.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				88B6838C26C6BFCB00FEE4FE /* SampleViewManager.swift in Sources */,
 				8894C8F025F916870080DD6D /* SwiftLibrary.m in Sources */,
+				88B6839326C6C34B00FEE4FE /* SampleViewModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
