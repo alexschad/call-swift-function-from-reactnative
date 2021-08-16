@@ -73,7 +73,13 @@ const App = () => {
                 <Text style={styles.headText}>
                   This is a view defined in Swift:
                 </Text>
-                <SwiftView />
+                <SwiftView>
+                  <View>
+                    <Text style={styles.headText}>
+                      This is a js view passed to a swift view
+                    </Text>
+                  </View>
+                </SwiftView>
               </View>
             </View>
           </View>
