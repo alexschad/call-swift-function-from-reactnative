@@ -73,9 +73,9 @@ const App = () => {
                 <Text style={styles.headText}>
                   This is a view defined in Swift:
                 </Text>
-                <SwiftView>
+                <SwiftView style={{flex: 1}}>
                   <View>
-                    <Text style={styles.headText}>
+                    <Text style={styles.swiftHeadText}>
                       This is a js view passed to a swift view
                     </Text>
                   </View>
@@ -115,8 +115,15 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   headText: {textAlign: 'center', fontSize: 20, paddingBottom: 10},
+  swiftHeadText: {
+    color: 'white',
+    textAlign: 'center',
+    fontSize: 20,
+    padding: 10,
+  },
   swiftContainer: {
-    marginTop: 20,
+    height: 300,
+    width: '100%',
   },
 });
 
